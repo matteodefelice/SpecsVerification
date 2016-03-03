@@ -199,7 +199,7 @@ function(probs, obs, bins=10, nboot=500,
   #############################################
   # return data
   #############################################
-  ret.df <- data.frame(p.avgs=p.avgs, cond.probs=obar.i, 
+  ret.df <- data.frame(p.avgs=p.avgs, bin.size = h, cond.probs=obar.i, 
                        cbar.lo=cons.bars[1,], cbar.hi=cons.bars[2,])
   return(ret.df)
 }
